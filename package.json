@@ -1,0 +1,22 @@
+{
+    "name": "workoutnews",
+    "version": "1.0.0",
+    "description": "UI for collection of workout routines.",
+    "main": "index.js",
+    "scripts": {
+        "watch:sass": "node-sass sass/main.scss css/style.css -w"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yobin7364/workoutNews.git"
+    },
+    "author": "yobin",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/yobin7364/workoutNews/issues"
+    },
+    "homepage": "https://github.com/yobin7364/workoutNews#readme",
+    "dependencies": {
+        "node-sass": "^4.13.0"
+    }
+}

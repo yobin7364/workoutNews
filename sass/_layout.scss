@@ -1,0 +1,22 @@
+.container {}
+
+//header
+.header {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: inherit;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--color-grey-light-2);
+}
+
+//subHeader
+.subHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 19rem;
+}
+
+.gymNews {
+    margin: 2rem 19rem;
+}

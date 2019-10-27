@@ -1,0 +1,30 @@
+:root {
+    --color-gray-dark-1: #333;
+    --color-grey-light-1: #f4f2f2;
+    --color-grey-light-2: #d9d5d5;
+    --color-primary-1: #01adb9;
+    --color-primary-2: DeepPink;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: 400;
+    color: var(--color-gray-dark-1);
+    min-height: 100vh;
+}
