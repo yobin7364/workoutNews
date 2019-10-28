@@ -74,10 +74,14 @@
 //mostViewed
 .mostViewed {
     display: flex;
+    flex-direction: column;
+    &__gallery {
+        display: flex;
+        margin-bottom: 3rem;
+    }
     &__parentLink {
         &:hover {
             opacity: 0.75;
-            font-weight: bolder;
         }
     }
     &__item {
@@ -97,5 +101,201 @@
         font-weight: bold;
         color: inherit;
         text-decoration: none;
+        &:hover {
+            color: var(--color-primary-2);
+        }
+    }
+    &__header {
+        text-transform: uppercase;
+        font-family: inherit;
+        font-size: 2.6rem;
+        font-weight: bold;
+        color: inherit;
+        border-bottom: var(--border-bottom);
+        padding: 2rem 0;
+    }
+}
+
+////////////////////////
+//leftMeal
+.leftMeal {
+    flex: 1;
+    font-family: inherit;
+    font-weight: bold;
+    margin-right: 6rem;
+    display: flex;
+    flex-direction: column;
+    &__topic {
+        font-size: 1.2rem;
+        color: var(--color-primary-1);
+        margin: 4px 0;
+        text-transform: uppercase;
+    }
+    &__parentLink {
+        &:hover {
+            opacity: 0.75;
+        }
+    }
+    &__photo {
+        width: 100%;
+    }
+    &__story {
+        margin: 4px 0;
+    }
+    &__link {
+        text-decoration: none;
+        color: inherit;
+        font-size: 4rem;
+        &:hover {
+            color: var(--color-primary-2);
+        }
+    }
+    &__smallDescription {}
+    &__descriptionLink {
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 200;
+        color: inherit;
+    }
+}
+
+////////////////////////
+//rightMeal
+.rightMeal {
+    flex: 1;
+    font-family: inherit;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    &__fraction {
+        display: flex;
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+    }
+    &__topic {
+        font-size: 1.2rem;
+        color: var(--color-primary-1);
+        margin: 4px 0;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+    &__parentLink {
+        flex: 0 0 30%;
+        margin-right: 2rem;
+        &:hover {
+            opacity: 0.75;
+        }
+    }
+    &__photo {
+        width: 100%;
+    }
+    &__story {
+        margin: 4px 0;
+    }
+    &__link {
+        text-decoration: none;
+        color: inherit;
+        font-size: 2.5rem;
+        &:hover {
+            color: var(--color-primary-2);
+        }
+    }
+    &__smallDescription {
+        margin: 1rem 0;
+    }
+    &__descriptionLink {
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 200;
+        color: inherit;
+    }
+}
+
+////////////////////////
+//editorChoice
+.editorChoice {
+    font-family: inherit;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    &__fraction {
+        display: flex;
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+    }
+    &__topic {
+        font-size: 1.2rem;
+        color: var(--color-primary-1);
+        margin: 4px 0;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+    //flex width always applys to the parent element
+    &__parentLink {
+        flex: 0 0 23%;
+        margin-right: 2rem;
+        &:hover {
+            opacity: 0.75;
+        }
+    }
+    &__photo {
+        width: 100%;
+    }
+    &__story {
+        margin: 4px 0;
+    }
+    &__link {
+        text-decoration: none;
+        color: inherit;
+        font-size: 3.5rem;
+        &:hover {
+            color: var(--color-primary-2);
+        }
+    }
+    &__smallDescription {
+        margin: 1rem 0;
+    }
+    &__descriptionLink {
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 200;
+        color: inherit;
+    }
+}
+
+////////////////////////
+//voice
+.voice {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: var(--border-bottom);
+    &>* {
+        text-transform: uppercase;
+        font-family: inherit;
+        font-size: 2.6rem;
+        font-weight: bold;
+        color: inherit;
+    }
+    &__header {
+        padding: 2rem 0;
+    }
+    &__link {
+        display: flex;
+    }
+    &__link button {
+        color: var(--color-primary-1);
+        padding: 2rem 0;
+        text-decoration: none;
+        &:hover {
+            color: var(--color-primary-2);
+            fill: var(--color-primary-2);
+        }
+    }
+    &__icon {
+        height: 1.7rem;
+        width: 1.7rem;
+        fill: var(--color-primary-1);
     }
 }

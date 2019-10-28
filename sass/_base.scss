@@ -4,6 +4,7 @@
     --color-grey-light-2: #d9d5d5;
     --color-primary-1: #01adb9;
     --color-primary-2: DeepPink;
+    --border-bottom: 1px solid var(--color-grey-light-2);
 }
 
 * {
@@ -27,4 +28,17 @@ body {
     font-weight: 400;
     color: var(--color-gray-dark-1);
     min-height: 100vh;
+}
+
+//meal
+.meal {
+    display: flex;
+    margin: 5rem 0;
+}
+
+//mealInfo
+.mealInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0;
 }
