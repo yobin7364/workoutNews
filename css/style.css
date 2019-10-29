@@ -4,7 +4,8 @@
   --color-grey-light-2: #d9d5d5;
   --color-primary-1: #01adb9;
   --color-primary-2: DeepPink;
-  --border-bottom: 1px solid var(--color-grey-light-2); }
+  --border-bottom: 1px solid var(--color-grey-light-2);
+  --people-voice-bg-color: #fbf5ed; }
 
 * {
   padding: 0;
@@ -27,7 +28,7 @@ body {
 
 .meal {
   display: flex;
-  margin: 5rem 0; }
+  margin-bottom: 5rem; }
 
 .mealInfo {
   display: flex;
@@ -35,11 +36,15 @@ body {
   margin: 5rem 0; }
 
 .header {
+  position: fixed;
   font-size: 1.6rem;
   font-weight: 500;
   color: inherit;
   padding: 2rem 0;
-  border-bottom: var(--border-bottom); }
+  border-bottom: var(--border-bottom);
+  z-index: 100;
+  width: 100%;
+  background-color: white; }
 
 .subHeader {
   display: flex;
@@ -48,7 +53,8 @@ body {
   margin: 0 19rem; }
 
 .gymNews {
-  margin: 2rem 19rem; }
+  position: absolute;
+  margin: 10rem 19rem 2rem; }
 
 .subscribe:link, .subscribe:visited {
   font-size: 1.75rem;
@@ -239,24 +245,64 @@ body {
   display: flex;
   justify-content: space-between;
   border-bottom: var(--border-bottom); }
-  .voice > * {
+  .voice__header {
     text-transform: uppercase;
     font-family: inherit;
     font-size: 2.6rem;
     font-weight: bold;
-    color: inherit; }
-  .voice__header {
+    color: inherit;
     padding: 2rem 0; }
   .voice__link {
-    display: flex; }
-  .voice__link button {
-    color: var(--color-primary-1);
-    padding: 2rem 0;
-    text-decoration: none; }
-    .voice__link button:hover {
-      color: var(--color-primary-2);
-      fill: var(--color-primary-2); }
+    display: flex;
+    align-items: center; }
   .voice__icon {
     height: 1.7rem;
     width: 1.7rem;
     fill: var(--color-primary-1); }
+
+.btn__inline {
+  color: var(--color-primary-1);
+  padding: 2rem 5rem;
+  border: none;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 2.6rem;
+  font-weight: bold;
+  background-color: transparent;
+  margin-right: -3rem; }
+  .btn__inline:hover {
+    cursor: pointer;
+    color: var(--color-primary-2); }
+  .btn__inline:hover + .voice__icon {
+    fill: var(--color-primary-2); }
+  .btn__inline:focus {
+    outline: none; }
+
+.people-voice {
+  margin: 4rem 0; }
+  .people-voice__list {
+    list-style: none;
+    display: flex; }
+  .people-voice__item {
+    flex: 1;
+    background-color: var(--people-voice-bg-color); }
+    .people-voice__item:not(:last-child) {
+      margin-right: 2rem; }
+  .people-voice__name {
+    font-family: inherit;
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: inherit;
+    padding: 2rem; }
+  .people-voice__photo {
+    width: 100%; }
+  .people-voice__description {
+    padding: 2rem 2rem 3.5rem; }
+  .people-voice__link {
+    font-family: inherit;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: inherit;
+    text-decoration: none; }
+    .people-voice__link:hover {
+      color: var(--color-primary-2); }

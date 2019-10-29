@@ -1,12 +1,17 @@
+//container
 .container {}
 
 //header
 .header {
+    position: fixed;
     font-size: 1.6rem;
     font-weight: 500;
     color: inherit;
     padding: 2rem 0;
     border-bottom: var(--border-bottom);
+    z-index: 100;
+    width: 100%;
+    background-color: white;
 }
 
 //subHeader
@@ -18,5 +23,6 @@
 }
 
 .gymNews {
-    margin: 2rem 19rem;
+    position: absolute;
+    margin: 10rem 19rem 2rem;
 }

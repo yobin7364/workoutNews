@@ -5,6 +5,7 @@
     --color-primary-1: #01adb9;
     --color-primary-2: DeepPink;
     --border-bottom: 1px solid var(--color-grey-light-2);
+    --people-voice-bg-color: #fbf5ed;
 }
 
 * {
@@ -33,7 +34,7 @@ body {
 //meal
 .meal {
     display: flex;
-    margin: 5rem 0;
+    margin-bottom: 5rem;
 }
 
 //mealInfo
