@@ -12,6 +12,7 @@
     z-index: 100;
     width: 100%;
     background-color: white;
+    margin: 0;
 }
 
 //subHeader
@@ -22,7 +23,17 @@
     margin: 0 19rem;
 }
 
+//gymNews
 .gymNews {
-    position: absolute;
-    margin: 10rem 19rem 2rem;
+    margin: 0 19rem 2rem;
+    //padding makes space with fixed sibling
+    padding-top: 10rem;
+}
+
+//footer
+.footer {
+    display: flex;
+    padding: 8rem 19rem;
+    background-color: var(--people-voice-bg-color);
+    align-items: center;
 }
