@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+
     <title>Work Routine &#58; Your Workout Routine</title>
 </head>
 
@@ -15,7 +16,21 @@
         <!-- Header -->
         <header class="header">
             <div class="subHeader">
-                <a href="#" class="subscribe">Subscribe</a>
+                <div class="nav">
+                    <button class="nav__button" id="navIcon">
+                        <svg class="nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-list2"></use>
+                        </svg>
+                    </button>
+
+                    <button class="nav__button" id="crossIcon">
+                        <svg class="nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                        </svg>
+                    </button>
+
+                    <a href="#" class="subscribe">Subscribe</a>
+                </div>
                 <a href="#" class="homePage">Workout Routine</a>
                 <form action="#" class="search">
                     <input type="text" class="search__input" placeholder="Search workout">
@@ -284,6 +299,7 @@
 
         <!-- footer end-->
     </div>
+    <script src="source/source.js"></script>
 </body>
 
 </html>

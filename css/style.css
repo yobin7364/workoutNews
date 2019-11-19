@@ -353,3 +353,22 @@ body {
   font-family: sans-serif;
   font-weight: 400;
   color: var(--color-footer); }
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .nav__button {
+    border: none;
+    background-color: transparent;
+    margin-right: 2rem;
+    color: transparent; }
+    .nav__button:hover {
+      fill: var(--color-primary-2);
+      cursor: pointer; }
+  .nav__icon {
+    width: 1.7rem;
+    height: 1.7rem; }
+
+#crossIcon {
+  display: none; }

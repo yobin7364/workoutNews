@@ -414,3 +414,29 @@
     font-weight: 400;
     color: var(--color-footer);
 }
+
+////////////////////////
+//nav
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__button {
+        border: none;
+        background-color: transparent;
+        margin-right: 2rem;
+        color: transparent;
+        &:hover {
+            fill: var(--color-primary-2);
+            cursor: pointer;
+        }
+    }
+    &__icon {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+}
+
+#crossIcon {
+    display: none;
+}
