@@ -5,6 +5,7 @@
   --color-primary-1: #01adb9;
   --color-primary-2: DeepPink;
   --border-bottom: 1px solid var(--color-grey-light-2);
+  --border-bottom-menu: 1px solid black;
   --people-voice-bg-color: #fbf5ed;
   --color-footer: #918f8f; }
 
@@ -366,9 +367,79 @@ body {
     .nav__button:hover {
       fill: var(--color-primary-2);
       cursor: pointer; }
+    .nav__button:focus {
+      outline: none; }
   .nav__icon {
-    width: 1.7rem;
-    height: 1.7rem; }
+    width: 3.4rem;
+    height: 3.4rem; }
 
 #crossIcon {
   display: none; }
+
+.modal {
+  display: none;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--people-voice-bg-color);
+  z-index: 30;
+  padding-top: 10rem;
+  position: fixed;
+  animation-name: slideDown;
+  animation-duration: 1s; }
+  .modal__topics {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 19rem;
+    margin-right: 2rem; }
+    .modal__topics-header {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: inherit;
+      font-family: inherit;
+      padding-bottom: 1rem;
+      border-bottom: var(--border-bottom-menu); }
+    .modal__topics-list {
+      list-style: none;
+      margin-top: 2rem; }
+    .modal__topics-items {
+      font-size: 1.8rem;
+      font-weight: 200;
+      color: inherit;
+      font-family: inherit;
+      padding: 2rem 0; }
+  .modal__tools {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 19rem; }
+    .modal__tools-header {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: inherit;
+      font-family: inherit;
+      padding-bottom: 1rem;
+      border-bottom: var(--border-bottom-menu); }
+    .modal__tools-list {
+      list-style: none;
+      margin-top: 2rem; }
+    .modal__tools-items {
+      font-size: 1.8rem;
+      font-weight: 200;
+      color: inherit;
+      font-family: inherit;
+      padding: 2rem 0; }
+  .modal__link:link, .modal__link:visited {
+    text-decoration: none;
+    color: inherit; }
+  .modal__link:hover {
+    color: var(--color-primary-2); }
+
+@keyframes slideDown {
+  0% {
+    top: -100%;
+    opacity: 0; }
+  100% {
+    top: 0;
+    opacity: 1; } }
