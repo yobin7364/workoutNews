@@ -87,6 +87,11 @@
     &__item {
         &:not(:last-child) {
             margin-right: 2rem;
+            @media only screen and (max-width: $size-medium-2) {
+                &:not(:nth-child(2)) {
+                    margin-right: 0;
+                }
+            }
         }
     }
     &__photo {

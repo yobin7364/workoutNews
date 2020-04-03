@@ -1,0 +1,17 @@
+:root {
+    --color-gray-dark-1: #333;
+    --color-grey-light-1: #f4f2f2;
+    --color-grey-light-2: #d9d5d5;
+    --color-primary-1: #01adb9;
+    --color-primary-2: DeepPink;
+    --border-bottom: 1px solid var(--color-grey-light-2);
+    --border-bottom-menu: 1px solid black;
+    --people-voice-bg-color: #fbf5ed;
+    --color-footer: #918f8f;
+}
+
+//size variables for media query
+$size-large:83.125em; //1330px
+$size-large-2:68.125em; //1030px
+$size-medium-1:57.8125em; //925
+$size-medium-2:48em; //720

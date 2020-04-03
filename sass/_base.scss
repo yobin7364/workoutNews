@@ -1,15 +1,3 @@
-:root {
-    --color-gray-dark-1: #333;
-    --color-grey-light-1: #f4f2f2;
-    --color-grey-light-2: #d9d5d5;
-    --color-primary-1: #01adb9;
-    --color-primary-2: DeepPink;
-    --border-bottom: 1px solid var(--color-grey-light-2);
-    --border-bottom-menu: 1px solid black;
-    --people-voice-bg-color: #fbf5ed;
-    --color-footer: #918f8f;
-}
-
 * {
     padding: 0;
     margin: 0;
@@ -24,6 +12,17 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    @media only screen and (max-width: $size-large) {
+        font-size: 50%;
+    }
+    @media only screen and (max-width: $size-medium-1) {
+        font-size: 40%;
+    }
+    @media only screen and (max-width: $size-medium-2) {
+        .mostViewed__item:nth-last-child(-n + 5) {
+            display: none;
+        }
+    }
 }
 
 body {

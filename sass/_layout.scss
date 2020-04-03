@@ -21,6 +21,15 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 19rem;
+    @media only screen and (max-width: $size-large-2) {
+        margin: 0 10rem;
+    }
+    @media only screen and (max-width: $size-medium-1) {
+        margin: 0 7rem;
+    }
+    @media only screen and (max-width: $size-medium-2) {
+        margin: 0 5rem;
+    }
 }
 
 //gymNews
@@ -28,6 +37,15 @@
     margin: 0 19rem 2rem;
     //padding makes space with fixed sibling
     padding-top: 10rem;
+    @media only screen and (max-width: $size-large-2) {
+        margin: 0 10rem 2rem;
+    }
+    @media only screen and (max-width: $size-medium-1) {
+        margin: 0 7rem 2rem;
+    }
+    @media only screen and (max-width: $size-medium-2) {
+        margin: 0 5rem 2rem;
+    }
 }
 
 //footer
