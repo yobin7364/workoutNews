@@ -4,4 +4,4 @@ UI for collection of workout routines.
 # Steps to install NPM:
 1. ```npm init```
 2. ```npm install```
-3. ```npm install node:sass```
+3. ```npm install sass```
