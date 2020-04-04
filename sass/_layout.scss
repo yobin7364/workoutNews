@@ -28,7 +28,9 @@
         margin: 0 7rem;
     }
     @media only screen and (max-width: $size-medium-2) {
-        margin: 0 5rem;
+        font-size: 10px;
+        flex-wrap: wrap;
+        margin: 0 10rem;
     }
 }
 
@@ -44,7 +46,7 @@
         margin: 0 7rem 2rem;
     }
     @media only screen and (max-width: $size-medium-2) {
-        margin: 0 5rem 2rem;
+        margin: 0 10rem 2rem;
     }
 }
 

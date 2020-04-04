@@ -40,11 +40,14 @@ body {
 .meal {
   display: flex;
   margin-bottom: 5rem; }
+  @media only screen and (max-width: 48em) {
+    .meal {
+      flex-direction: column; } }
 
 .mealInfo {
   display: flex;
-  flex-direction: column;
-  margin: 5rem 0; }
+  margin: 5rem 0;
+  flex-direction: column; }
 
 .header {
   position: fixed;
@@ -71,7 +74,9 @@ body {
       margin: 0 7rem; } }
   @media only screen and (max-width: 48em) {
     .subHeader {
-      margin: 0 5rem; } }
+      font-size: 10px;
+      flex-wrap: wrap;
+      margin: 0 10rem; } }
 
 .gymNews {
   margin: 0 19rem 2rem;
@@ -84,7 +89,7 @@ body {
       margin: 0 7rem 2rem; } }
   @media only screen and (max-width: 48em) {
     .gymNews {
-      margin: 0 5rem 2rem; } }
+      margin: 0 10rem 2rem; } }
 
 .footer {
   display: flex;
@@ -117,6 +122,9 @@ body {
     color: inherit;
     padding: .7rem 1rem;
     margin-right: -3rem; }
+    @media only screen and (max-width: 48em) {
+      .search__input {
+        width: 100%; } }
     .search__input:focus {
       outline: none; }
     .search__input::-webkit-input-placeholder {
@@ -180,6 +188,10 @@ body {
   margin-right: 6rem;
   display: flex;
   flex-direction: column; }
+  @media only screen and (max-width: 48em) {
+    .leftMeal {
+      margin-right: 0;
+      margin-bottom: 3rem; } }
   .leftMeal__topic {
     font-size: 1.2rem;
     color: var(--color-primary-1);
@@ -211,6 +223,9 @@ body {
   flex-direction: column; }
   .rightMeal__fraction {
     display: flex; }
+    @media only screen and (max-width: 48em) {
+      .rightMeal__fraction {
+        flex-direction: column; } }
     .rightMeal__fraction:not(:last-child) {
       margin-bottom: 3rem; }
   .rightMeal__topic {
@@ -249,6 +264,9 @@ body {
   flex-direction: column; }
   .editorChoice__fraction {
     display: flex; }
+    @media only screen and (max-width: 48em) {
+      .editorChoice__fraction {
+        flex-direction: column; } }
     .editorChoice__fraction:not(:last-child) {
       margin-bottom: 3rem; }
   .editorChoice__topic {
@@ -322,11 +340,18 @@ body {
   .people-voice__list {
     list-style: none;
     display: flex; }
+    @media only screen and (max-width: 48em) {
+      .people-voice__list {
+        flex-direction: column; } }
   .people-voice__item {
     flex: 1;
     background-color: var(--people-voice-bg-color); }
     .people-voice__item:not(:last-child) {
       margin-right: 2rem; }
+      @media only screen and (max-width: 48em) {
+        .people-voice__item:not(:last-child) {
+          margin-right: 0rem;
+          margin-bottom: 3rem; } }
   .people-voice__name {
     font-family: inherit;
     font-size: 2.6rem;
@@ -417,12 +442,19 @@ body {
   position: fixed;
   animation-name: slideDown;
   animation-duration: 1s; }
+  @media only screen and (max-width: 48em) {
+    .modal {
+      flex-direction: column;
+      overflow: auto; } }
   .modal__topics {
     display: flex;
     flex-direction: column;
     flex: 1;
     margin-left: 19rem;
     margin-right: 2rem; }
+    @media only screen and (max-width: 48em) {
+      .modal__topics {
+        margin: 35rem 10rem 0; } }
     .modal__topics-header {
       font-size: 2.5rem;
       font-weight: 600;
@@ -444,6 +476,9 @@ body {
     flex-direction: column;
     flex: 1;
     margin-right: 19rem; }
+    @media only screen and (max-width: 48em) {
+      .modal__tools {
+        margin: 0 10rem; } }
     .modal__tools-header {
       font-size: 2.5rem;
       font-weight: 600;

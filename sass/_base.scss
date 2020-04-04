@@ -36,11 +36,14 @@ body {
 .meal {
     display: flex;
     margin-bottom: 5rem;
+    @media only screen and (max-width: $size-medium-2) {
+        flex-direction: column;
+    }
 }
 
 //mealInfo
 .mealInfo {
     display: flex;
-    flex-direction: column;
     margin: 5rem 0;
+    flex-direction: column;
 }
