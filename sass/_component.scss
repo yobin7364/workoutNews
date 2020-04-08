@@ -8,6 +8,9 @@
         text-transform: uppercase;
         text-decoration: none;
         color: var(--color-primary-1);
+        @media only screen and (max-width: $size-medium-2) {
+            display: none;
+        }
         &:hover {
             color: var(--color-primary-2);
         }
@@ -23,6 +26,10 @@
         font-weight: bolder;
         text-decoration: none;
         color: var(--color-gray-dark-1);
+        @media only screen and (max-width: $size-medium-2) {
+            flex: 0 0 66%;
+            font-size: 2.5rem;
+        }
     }
 }
 
@@ -32,13 +39,21 @@
     display: flex;
     align-items: center;
     margin-right: 10px;
+    border: 1px solid #dcdbdb;
+    @media only screen and (max-width: $size-medium-2) {
+        font-size: 3rem;
+        max-width: 100%;
+        width: 100%;
+    }
     &__input {
         font-family: inherit;
         font-size: inherit;
         color: inherit;
         padding: .7rem 1rem;
-        margin-right: -3rem;
+        border: none;
         @media only screen and (max-width: $size-medium-2) {
+            font-size: 2rem;
+            max-width: 100%;
             width: 100%;
         }
         &:focus {
@@ -52,8 +67,12 @@
     &__button {
         border: none;
         padding: .3rem;
-        background-color: white;
+        background-color: #ffffff;
         transition: all .2s;
+        @media only screen and (max-width: $size-medium-2) {
+            font-size: 2rem;
+            padding: 0.6rem;
+        }
         &:focus {
             outline: none;
         }
@@ -67,6 +86,10 @@
     &__icon {
         height: 1.7rem;
         width: 1.7rem;
+        @media only screen and (max-width: $size-medium-2) {
+            height: 2rem;
+            width: 2rem;
+        }
     }
     &:hover {
         fill: var(--color-primary-2);
@@ -289,6 +312,9 @@
     display: flex;
     justify-content: space-between;
     border-bottom: var(--border-bottom);
+    @media only screen and (max-width: $size-small-1) {
+        flex-direction: column;
+    }
     &__header {
         text-transform: uppercase;
         font-family: inherit;
@@ -321,6 +347,9 @@
     background-color: transparent;
     //makes hover effect on this button also on voice__icon
     margin-right: -3rem;
+    @media only screen and (max-width: $size-small-1) {
+        padding: 0 5rem 0 0;
+    }
     &:hover {
         cursor: pointer;
         color: var(--color-primary-2);
@@ -391,6 +420,10 @@
     align-items: center;
     justify-content: center;
     border-right: var(--border-bottom);
+    @media only screen and (max-width: $size-medium-2) {
+        border-right: none;
+        margin-bottom: 2rem;
+    }
     &__list {
         list-style: none;
         display: flex;
@@ -486,6 +519,10 @@
     @media only screen and (max-width: $size-medium-2) {
         flex-direction: column;
         overflow: auto;
+        padding-top: 40rem;
+    }
+    @media only screen and (max-width: $size-small-1) {
+        padding-top: 26rem;
     }
     &__topics {
         display: flex;
@@ -493,8 +530,17 @@
         flex: 1;
         margin-left: 19rem;
         margin-right: 2rem;
+        @media only screen and (max-width: $size-large-2) {
+            margin-left: 10rem;
+        }
+        @media only screen and (max-width: $size-medium-1) {
+            margin-left: 7rem;
+        }
         @media only screen and (max-width: $size-medium-2) {
-            margin: 35rem 10rem 0;
+            margin: 1rem 10rem 4rem;
+        }
+        @media only screen and (max-width: $size-small-1) {
+            margin: 1rem 7rem 4rem;
         }
         &-header {
             font-size: 2.5rem;
@@ -521,8 +567,17 @@
         flex-direction: column;
         flex: 1;
         margin-right: 19rem;
+        @media only screen and (max-width: $size-large-2) {
+            margin-right: 10rem;
+        }
+        @media only screen and (max-width: $size-medium-1) {
+            margin-right: 7rem;
+        }
         @media only screen and (max-width: $size-medium-2) {
             margin: 0 10rem;
+        }
+        @media only screen and (max-width: $size-small-1) {
+            margin: 0 7rem;
         }
         &-header {
             font-size: 2.5rem;
@@ -566,5 +621,27 @@
     100% {
         top: 0;
         opacity: 1;
+    }
+}
+
+///////////////////////
+//search bar in scroll modal
+.scrollbar__search {
+    display: none;
+    @media only screen and (max-width: $size-medium-2) {
+        display: flex;
+        margin: 26rem 10rem 2rem;
+    }
+    @media only screen and (max-width: $size-small-1) {
+        margin: 30rem 7rem 2rem;
+    }
+}
+
+///////////////////////
+//search bar in header
+.header__search {
+    display: flex;
+    @media only screen and (max-width: $size-medium-2) {
+        display: none;
     }
 }

@@ -28,8 +28,13 @@ html {
     html {
       font-size: 40%; } }
   @media only screen and (max-width: 48em) {
-    html .mostViewed__item:nth-last-child(-n + 5) {
-      display: none; } }
+    html {
+      font-size: 62.5%; }
+      html .mostViewed__item:nth-last-child(-n + 5) {
+        display: none; } }
+  @media only screen and (max-width: 40em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: sans-serif;
@@ -74,9 +79,13 @@ body {
       margin: 0 7rem; } }
   @media only screen and (max-width: 48em) {
     .subHeader {
-      font-size: 10px;
-      flex-wrap: wrap;
       margin: 0 10rem; } }
+  @media only screen and (max-width: 40em) {
+    .subHeader {
+      margin: 0 7rem; } }
+  @media only screen and (max-width: 26.5625em) {
+    .subHeader {
+      margin: 0 2rem; } }
 
 .gymNews {
   margin: 0 19rem 2rem;
@@ -90,12 +99,25 @@ body {
   @media only screen and (max-width: 48em) {
     .gymNews {
       margin: 0 10rem 2rem; } }
+  @media only screen and (max-width: 40em) {
+    .gymNews {
+      margin: 0 7rem 2rem; } }
+  @media only screen and (max-width: 26.5625em) {
+    .gymNews {
+      margin: 0 2rem 2rem; } }
 
 .footer {
   display: flex;
   padding: 8rem 19rem;
   background-color: var(--people-voice-bg-color);
   align-items: center; }
+  @media only screen and (max-width: 48em) {
+    .footer {
+      padding: 8rem 6rem;
+      flex-direction: column; } }
+  @media only screen and (max-width: 26.5625em) {
+    .footer {
+      padding: 5rem 0; } }
 
 .subscribe:link, .subscribe:visited {
   font-size: 1.75rem;
@@ -103,6 +125,9 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--color-primary-1); }
+  @media only screen and (max-width: 48em) {
+    .subscribe:link, .subscribe:visited {
+      display: none; } }
   .subscribe:link:hover, .subscribe:visited:hover {
     color: var(--color-primary-2); }
 
@@ -111,19 +136,31 @@ body {
   font-weight: bolder;
   text-decoration: none;
   color: var(--color-gray-dark-1); }
+  @media only screen and (max-width: 48em) {
+    .homePage:link, .homePage:visited {
+      flex: 0 0 66%;
+      font-size: 2.5rem; } }
 
 .search {
   display: flex;
   align-items: center;
-  margin-right: 10px; }
+  margin-right: 10px;
+  border: 1px solid #dcdbdb; }
+  @media only screen and (max-width: 48em) {
+    .search {
+      font-size: 3rem;
+      max-width: 100%;
+      width: 100%; } }
   .search__input {
     font-family: inherit;
     font-size: inherit;
     color: inherit;
     padding: .7rem 1rem;
-    margin-right: -3rem; }
+    border: none; }
     @media only screen and (max-width: 48em) {
       .search__input {
+        font-size: 2rem;
+        max-width: 100%;
         width: 100%; } }
     .search__input:focus {
       outline: none; }
@@ -133,8 +170,12 @@ body {
   .search__button {
     border: none;
     padding: .3rem;
-    background-color: white;
+    background-color: #ffffff;
     transition: all .2s; }
+    @media only screen and (max-width: 48em) {
+      .search__button {
+        font-size: 2rem;
+        padding: 0.6rem; } }
     .search__button:focus {
       outline: none; }
     .search__button:active {
@@ -144,6 +185,10 @@ body {
   .search__icon {
     height: 1.7rem;
     width: 1.7rem; }
+    @media only screen and (max-width: 48em) {
+      .search__icon {
+        height: 2rem;
+        width: 2rem; } }
   .search:hover {
     fill: var(--color-primary-2); }
 
@@ -302,6 +347,9 @@ body {
   display: flex;
   justify-content: space-between;
   border-bottom: var(--border-bottom); }
+  @media only screen and (max-width: 40em) {
+    .voice {
+      flex-direction: column; } }
   .voice__header {
     text-transform: uppercase;
     font-family: inherit;
@@ -327,6 +375,9 @@ body {
   font-weight: bold;
   background-color: transparent;
   margin-right: -3rem; }
+  @media only screen and (max-width: 40em) {
+    .btn__inline {
+      padding: 0 5rem 0 0; } }
   .btn__inline:hover {
     cursor: pointer;
     color: var(--color-primary-2); }
@@ -378,6 +429,10 @@ body {
   align-items: center;
   justify-content: center;
   border-right: var(--border-bottom); }
+  @media only screen and (max-width: 48em) {
+    .contact {
+      border-right: none;
+      margin-bottom: 2rem; } }
   .contact__list {
     list-style: none;
     display: flex; }
@@ -445,16 +500,29 @@ body {
   @media only screen and (max-width: 48em) {
     .modal {
       flex-direction: column;
-      overflow: auto; } }
+      overflow: auto;
+      padding-top: 40rem; } }
+  @media only screen and (max-width: 40em) {
+    .modal {
+      padding-top: 26rem; } }
   .modal__topics {
     display: flex;
     flex-direction: column;
     flex: 1;
     margin-left: 19rem;
     margin-right: 2rem; }
+    @media only screen and (max-width: 68.125em) {
+      .modal__topics {
+        margin-left: 10rem; } }
+    @media only screen and (max-width: 57.8125em) {
+      .modal__topics {
+        margin-left: 7rem; } }
     @media only screen and (max-width: 48em) {
       .modal__topics {
-        margin: 35rem 10rem 0; } }
+        margin: 1rem 10rem 4rem; } }
+    @media only screen and (max-width: 40em) {
+      .modal__topics {
+        margin: 1rem 7rem 4rem; } }
     .modal__topics-header {
       font-size: 2.5rem;
       font-weight: 600;
@@ -476,9 +544,18 @@ body {
     flex-direction: column;
     flex: 1;
     margin-right: 19rem; }
+    @media only screen and (max-width: 68.125em) {
+      .modal__tools {
+        margin-right: 10rem; } }
+    @media only screen and (max-width: 57.8125em) {
+      .modal__tools {
+        margin-right: 7rem; } }
     @media only screen and (max-width: 48em) {
       .modal__tools {
         margin: 0 10rem; } }
+    @media only screen and (max-width: 40em) {
+      .modal__tools {
+        margin: 0 7rem; } }
     .modal__tools-header {
       font-size: 2.5rem;
       font-weight: 600;
@@ -508,3 +585,19 @@ body {
   100% {
     top: 0;
     opacity: 1; } }
+
+.scrollbar__search {
+  display: none; }
+  @media only screen and (max-width: 48em) {
+    .scrollbar__search {
+      display: flex;
+      margin: 26rem 10rem 2rem; } }
+  @media only screen and (max-width: 40em) {
+    .scrollbar__search {
+      margin: 30rem 7rem 2rem; } }
+
+.header__search {
+  display: flex; }
+  @media only screen and (max-width: 48em) {
+    .header__search {
+      display: none; } }
