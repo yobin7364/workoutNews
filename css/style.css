@@ -500,11 +500,7 @@ body {
   @media only screen and (max-width: 48em) {
     .modal {
       flex-direction: column;
-      overflow: auto;
-      padding-top: 40rem; } }
-  @media only screen and (max-width: 40em) {
-    .modal {
-      padding-top: 26rem; } }
+      overflow: auto; } }
   .modal__topics {
     display: flex;
     flex-direction: column;
@@ -591,7 +587,7 @@ body {
   @media only screen and (max-width: 48em) {
     .scrollbar__search {
       display: flex;
-      margin: 26rem 10rem 2rem; } }
+      margin: 40rem 10rem 2rem; } }
   @media only screen and (max-width: 40em) {
     .scrollbar__search {
       margin: 30rem 7rem 2rem; } }
